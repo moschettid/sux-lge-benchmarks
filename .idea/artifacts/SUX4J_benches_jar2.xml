@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="SUX4J_benches:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/SUX4J_benches_jar2</output-path>
+    <root id="root">
+      <element id="archive" name="SUX4J_benches.jar">
+        <element id="module-output" name="SUX4J_benches" />
+      </element>
+      <element id="library" level="project" name="libs" />
+    </root>
+  </artifact>
+</component>

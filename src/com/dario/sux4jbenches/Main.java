@@ -1,3 +1,5 @@
+package com.dario.sux4jbenches;
+
 import it.unimi.dsi.Util;
 import it.unimi.dsi.fastutil.ints.IntIterator;
 import it.unimi.dsi.fastutil.ints.IntOpenHashSet;
