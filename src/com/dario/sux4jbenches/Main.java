@@ -42,10 +42,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        for(int i=0; i<30; i++){
         var random = new XoShiRo256PlusPlusRandom(0);
 
-        for (int nEqs : new int[]{100, 1000, 30000}){
-            for(int nVarsPerEq : new int []{3, 4}){
+        for (int nEqs : new int[]{ 10000, 20000, 30000, 40000}){
+            for(int nVarsPerEq : new int []{3,4}){
                 boolean solved;
                 do {
                     int nVars = (int)Math.ceil(nEqs * deltas[nVarsPerEq]);
@@ -58,14 +59,15 @@ public class Main {
                     final long[] solution = new long[nVars];
                     Arrays.fill(solution, 0);
 
-                    System.out.printf("Lazy gaussian elimination w/ %d equations and %d vars\n", nEqs, nVarsPerEq);
+                    //System.out.printf("Lazy gaussian elimination w/ %d equations and %d vars\n", nEqs, nVarsPerEq);
 
                     solved = lazyGaussianElimination(system.copy(), var2Eq, c, Util.identity(nVars), solution);
 
-                    System.out.println(solution[0]);
-                    System.out.println();
+                    /*System.out.println(solution[0]);
+                    System.out.println();*/
                 } while(!solved);
             }
+        }
         }
     }
 }
