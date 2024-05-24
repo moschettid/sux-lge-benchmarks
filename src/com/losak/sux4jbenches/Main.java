@@ -1,4 +1,4 @@
-package com.dario.sux4jbenches;
+package com.losak.sux4jbenches;
 
 import it.unimi.dsi.Util;
 import it.unimi.dsi.fastutil.ints.IntIterator;
